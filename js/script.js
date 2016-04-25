@@ -19,4 +19,12 @@ var myItems = [
   ["question two", "answer two"]
   ];
   
-  document.write{"<p>" + myItems[0] + "</p>");
+var secondList = "<ul>";
+  
+while (i < myItems.length) {  
+  secondList += "<li>" + myItems[i] + "</li>");
+}
+
+secondList += "</ul>";
+
+document.write(secondList);
